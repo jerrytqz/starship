@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="https://starship.jerrytq.com/starship/public/apple-touch-icon.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="https://starship.jerrytq.com/starship/public/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="https://starship.jerrytq.com/starship/public/favicon-16x16.png"/>
+        <link rel="manifest" href="https://starship.jerrytq.com/starship/public/site.webmanifest"/>
+        <link rel="mask-icon" href="https://starship.jerrytq.com/starship/public/safari-pinned-tab.svg" color="#5bbad5"/>
+        <meta name="msapplication-TileColor" content="#da532c"/>
+        <meta name="theme-color" content="#000000"/>
+        <meta name="description" content="Assets for jerrytq.com and its subdomains"/>
+        <title>Starship</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"/>
+    </head>
+    <body style="background-color: #ffffff">
+        <div class="px-4 py-5 my-5 text-center">
+            <h1 class="display-1 fw-bold">&#10024;Starship&#10024;</h1>
+            <h2 class="display-6 fw-bold">Welcome onboard!</h2>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">
+                    Starship serves assets using a CDN for <a style="text-decoration: none" target="_blank" href="https://jerrytq.com">jerrytq.com</a> and its subdomains. Feeling curious? Search for an asset below!
+                </p>
+                <div class="text-start" style="font-style: italic; color: gray">https://starship.jerrytq.com/</div>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <input id="asset-path" class="form-control form-control-lg" placeholder="starship/examples/example.png"></input>
+                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3" onclick="submitHandler(document.getElementById('asset-path').value)">Go!</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const submitHandler = (assetPath) => {
+                window.location = 'https://starship.jerrytq.com/' + assetPath;
+            };
+        </script>
+    </body>
+</html>
